@@ -25,8 +25,9 @@
         android:id="@+id/imgV_Imagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/android"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_marginTop="46dp"
+        android:contentDescription="@string/text_HoraFecha"
+        app:srcCompat="@drawable/android" />
 </RelativeLayout>

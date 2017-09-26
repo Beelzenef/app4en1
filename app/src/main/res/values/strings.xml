@@ -1,5 +1,20 @@
 <resources>
-    <string name="app_name">Mostrar fecha y hora</string>
+    <string name="app_name">4 en 1</string>
+
+    <!-- Obtener fecha y hora -->
     <string name="text_HoraFecha">Fecha y hora</string>
     <string name="text_ObtenerDatos">Obtener fecha y hora</string>
+    <string name="text_descImage">Logo Android</string>
+
+    <!-- Divisas -->
+    <string name="text_ConversorMonedas">Conversor de monedas</string>
+    <string name="text_DolaresEuros">Dolares a euros</string>
+    <string name="text_EurosDolares">Euros a dolares</string>
+    <string name="text_Convertir">Convertir</string>
+    <string name="text_Dolares">Dolares</string>
+    <string name="text_Euros">Euros</string>
+
+    <!-- Contador de cafés -->
+
+    <!-- Comunicación entre Activities -->
 </resources>
