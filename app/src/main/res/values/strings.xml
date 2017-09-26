@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mostrar fecha y hora</string>
+    <string name="text_HoraFecha">Fecha y hora</string>
+    <string name="text_ObtenerDatos">Obtener fecha y hora</string>
+</resources>
