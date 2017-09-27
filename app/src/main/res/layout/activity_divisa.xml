@@ -10,13 +10,13 @@
         <EditText
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:id="@+id/edT_AEuros"/>
+            android:id="@+id/edT_AEuros"
+            android:inputType="numberDecimal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_Euros"/>
-
+            android:text="@string/txtV_Euros"/>
 
     </LinearLayout>
 
@@ -27,12 +27,13 @@
         <EditText
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:id="@+id/edT_ADolares"/>
+            android:id="@+id/edT_ADolares"
+            android:inputType="numberDecimal"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_Dolares"/>
+            android:text="@string/txtV_Dolares"/>
 
     </LinearLayout>
 
@@ -44,11 +45,11 @@
             android:id="@+id/radB_AEuros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_DolaresEuros" />
+            android:text="@string/radB_DolaresEuros" />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/text_EurosDolares"
+            android:text="@string/radB_EurosDolares"
             android:id="@+id/radB_ADolares"/>
 
     </RadioGroup>
@@ -56,7 +57,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_Convertir"
-        android:id="@+id/btn_Conversion" />
+        android:text="@string/btn_Convertir"
+        android:id="@+id/btn_Conversion"
+        android:onClick="manageOnClick"/>
 
 </LinearLayout>

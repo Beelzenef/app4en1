@@ -11,7 +11,7 @@ import android.widget.RadioButton;
         Conversión de monedas
         @author Elena G (Beelzenef)
  */
-public class Divisas extends AppCompatActivity implements View.OnClickListener {
+public class Divisas extends AppCompatActivity {
 
     // Instancias a usar
     Button btn_ConvertirMoneda;
@@ -19,6 +19,8 @@ public class Divisas extends AppCompatActivity implements View.OnClickListener {
     EditText edt_aDolares;
     RadioButton radB_aDolares;
     RadioButton radB_aEuros;
+
+    private double cambioMoneda = 0.85;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,20 +34,41 @@ public class Divisas extends AppCompatActivity implements View.OnClickListener {
         radB_aDolares = (RadioButton)findViewById(R.id.radB_ADolares);
         radB_aEuros = (RadioButton)findViewById(R.id.radB_AEuros);
 
-        // Suscripcion al evento onClick
-        btn_ConvertirMoneda.setOnClickListener(this);
-
     }
 
-    @Override
-    public void onClick(View v) {
-        if (v == btn_ConvertirMoneda)
-            actualizarMonedas();
-    }
-
-    void actualizarMonedas()
+    public void manageOnClick(View v)
     {
-        edt_aDolares.setText("0");
-        edt_aEuros.setText("0");
+        if (v == (Button)findViewById(R.id.btn_Conversion))
+        {
+            // Seleccionando tipo de cambio
+            if (radB_aDolares.isChecked())
+            {
+                cambioADolares();
+            }
+            if (radB_aEuros.isChecked())
+            {
+                cambioAEuros();
+            }
+        }
+    }
+
+    void cambioAEuros()
+    {
+        double valorCambiado;
+
+        if (edt_aDolares.getText().length() != 0) {
+            valorCambiado = Double.parseDouble(edt_aDolares.getText().toString()) * cambioMoneda;
+            edt_aEuros.setText(Double.toString(valorCambiado)) ;
+        }
+    }
+
+    void cambioADolares()
+    {
+        double valorCambiado;
+
+        if (edt_aEuros.getText().length() != 0) {
+            valorCambiado = Double.parseDouble(edt_aEuros.getText().toString()) / cambioMoneda;
+            edt_aDolares.setText(Double.toString(valorCambiado)) ;
+        }
     }
 }
