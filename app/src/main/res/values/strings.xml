@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">4 en 1</string>
 
+    <!-- Inicio -->
+    <string name="btn_Ejercicio1">Cambio de divisas</string>
+    <string name="btn_Ejercicio2">Navegación</string>
+    <string name="btn_Ejercicio3">Contador de cafés</string>
+    <string name="btn_Ejercicio4">Mensaje entre Activities</string>
+    <string name="btn_Ejercicio6">Obtener fecha y hora</string>
+    <string name="btn_Ejercicio5">Ejercicio propio</string>
+    <string name="txtV_msgInicio">¿Qué ejercicio deseas ver?</string>
+
     <!-- Obtener fecha y hora -->
     <string name="txtV_HoraFecha">Fecha y hora</string>
     <string name="txtV_ObtenerDatos">Obtener fecha y hora</string>
@@ -15,6 +24,13 @@
     <string name="txtV_Euros">Euros</string>
 
     <!-- Contador de cafés -->
+    <string name="txtV_ContadorCafes">Llevas %1$s cafe(s)</string>
+    <string name="btn_masTiempo">+</string>
+    <string name="btn_menosTiempo">-</string>
 
     <!-- Comunicación entre Activities -->
+
+    <!-- Navegacion -->
+    <string name="txtV_WebAVisitar">¿Que web deseas visitar?</string>
+    <string name="btn_VisitarPagina">Visitar pagina</string>
 </resources>
