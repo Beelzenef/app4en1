@@ -10,7 +10,7 @@
         android:layout_alignTop="@+id/txtV_FechaHora"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
-        android:text="@string/text_ObtenerDatos" />
+        android:text="@string/txtV_ObtenerDatos" />
 
     <TextView
         android:id="@+id/txtV_FechaHora"
@@ -19,7 +19,7 @@
         android:layout_below="@+id/imgV_Imagen"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="33dp"
-        android:text="@string/text_HoraFecha" />
+        android:text="@string/txtV_HoraFecha" />
 
     <ImageView
         android:id="@+id/imgV_Imagen"
@@ -28,6 +28,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:contentDescription="@string/text_HoraFecha"
+        android:contentDescription="@string/txtV_HoraFecha"
         app:srcCompat="@drawable/android" />
 </RelativeLayout>

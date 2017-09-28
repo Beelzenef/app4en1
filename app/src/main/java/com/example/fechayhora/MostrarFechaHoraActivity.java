@@ -12,7 +12,7 @@ import java.util.Date;
  *  Obteniendo fecha y hora
  *  @author Elena G (Beelzenef)
  */
-public class MostrarFechaHora extends AppCompatActivity implements View.OnClickListener {
+public class MostrarFechaHoraActivity extends AppCompatActivity implements View.OnClickListener {
 
     // Controles a modificar
     TextView txtV_fechaYHora;

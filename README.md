@@ -1,6 +1,6 @@
-# Obtener fecha y hora
+# app5en1
 
-Primera actividad (ampliable) para ACDAT
+Primer ejercicio (ampliable) para ACDAT
 
 ## Aplicaciones a realizar:
 
@@ -8,3 +8,4 @@ Primera actividad (ampliable) para ACDAT
 - [ ] Contador de cafés :coffee:
 - [x] Divisas :dollar:
 - [ ] Mensaje entre Activities :mailbox:
+- [ ] Saludo y navegación :iphone: :raising_hand:

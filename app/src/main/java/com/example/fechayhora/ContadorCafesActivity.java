@@ -3,7 +3,7 @@ package com.example.fechayhora;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ContadorCafes extends AppCompatActivity {
+public class ContadorCafesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

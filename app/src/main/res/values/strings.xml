@@ -6,7 +6,7 @@
     <string name="txtV_ObtenerDatos">Obtener fecha y hora</string>
     <string name="descImage">Logo Android</string>
 
-    <!-- Divisas -->
+    <!-- DivisasActivity -->
     <string name="title_ConversorMonedas">Conversor de monedas</string>
     <string name="radB_DolaresEuros">Dolares a euros</string>
     <string name="radB_EurosDolares">Euros a dolares</string>

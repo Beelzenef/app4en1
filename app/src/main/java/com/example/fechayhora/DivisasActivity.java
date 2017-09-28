@@ -6,12 +6,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 /**
         Conversión de monedas
         @author Elena G (Beelzenef)
  */
-public class Divisas extends AppCompatActivity {
+public class DivisasActivity extends AppCompatActivity {
 
     // Instancias a usar
     Button btn_ConvertirMoneda;
@@ -20,7 +21,7 @@ public class Divisas extends AppCompatActivity {
     RadioButton radB_aDolares;
     RadioButton radB_aEuros;
 
-    private double cambioMoneda = 0.85;
+    Conversor miConversor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,9 @@ public class Divisas extends AppCompatActivity {
         radB_aDolares = (RadioButton)findViewById(R.id.radB_ADolares);
         radB_aEuros = (RadioButton)findViewById(R.id.radB_AEuros);
 
+        // Creando un conversor de monedas
+        miConversor = new Conversor();
+
     }
 
     public void manageOnClick(View v)
@@ -43,32 +47,19 @@ public class Divisas extends AppCompatActivity {
             // Seleccionando tipo de cambio
             if (radB_aDolares.isChecked())
             {
-                cambioADolares();
+                if (edt_aEuros.getText().length() != 0 && edt_aEuros.getText().toString() != ".") {
+                    edt_aDolares.setText(miConversor.cambioADolares(edt_aEuros.getText().toString()));
+                    Toast.makeText(this, "EUR --> USD", Toast.LENGTH_SHORT).show();
+                }
             }
-            if (radB_aEuros.isChecked())
+            else
             {
-                cambioAEuros();
+                if (edt_aDolares.getText().length() != 0 && edt_aDolares.getText().toString() != ".") {
+                    edt_aEuros.setText(miConversor.cambioAEuros(edt_aDolares.getText().toString()));
+                    Toast.makeText(this, "USD --> EUR", Toast.LENGTH_SHORT).show();
+                }
             }
         }
-    }
-
-    void cambioAEuros()
-    {
-        double valorCambiado;
-
-        if (edt_aDolares.getText().length() != 0) {
-            valorCambiado = Double.parseDouble(edt_aDolares.getText().toString()) * cambioMoneda;
-            edt_aEuros.setText(Double.toString(valorCambiado)) ;
-        }
-    }
-
-    void cambioADolares()
-    {
-        double valorCambiado;
-
-        if (edt_aEuros.getText().length() != 0) {
-            valorCambiado = Double.parseDouble(edt_aEuros.getText().toString()) / cambioMoneda;
-            edt_aDolares.setText(Double.toString(valorCambiado)) ;
-        }
+        // Mostrando tostadita de notificacion
     }
 }

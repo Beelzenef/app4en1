@@ -8,6 +8,23 @@
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/edT_ADolares"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtV_Dolares"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:id="@+id/edT_AEuros"
@@ -20,23 +37,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/edT_ADolares"
-            android:inputType="numberDecimal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txtV_Dolares"/>
-
-    </LinearLayout>
-
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -45,6 +45,7 @@
             android:id="@+id/radB_AEuros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/radB_DolaresEuros" />
         <RadioButton
             android:layout_width="wrap_content"
