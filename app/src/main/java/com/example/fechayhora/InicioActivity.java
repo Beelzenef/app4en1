@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.fechayhora.EJ_Divisas.DivisasActivity;
+import com.example.fechayhora.EJ_EnviarMensaje.EnviarMensajeActivity;
+
 /**
  * Clase Inicio, ¡Intents para todos!
  * @author Elena G (Beelzenef)
@@ -40,6 +43,8 @@ public class InicioActivity extends AppCompatActivity {
                 break;
             // Mensaje entre Activities
             case R.id.btn_Ejercicio4:
+                unIntent = new Intent(InicioActivity.this, EnviarMensajeActivity.class);
+                startActivity(unIntent);
                 break;
             // Ejercicio propio
             case R.id.btn_Ejercicio5:

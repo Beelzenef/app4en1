@@ -7,5 +7,7 @@ Primer ejercicio (ampliable) para ACDAT
 - [x] Fecha y hora :clock1:
 - [ ] Contador de cafés :coffee:
 - [x] Divisas :dollar:
-- [ ] Mensaje entre Activities :mailbox:
-- [ ] Saludo y navegación :iphone: :raising_hand:
+- [x] Mensaje entre Activities :mailbox:
+- [x] Navegación :raising_hand:
+
+![Beelzenef creando](https://geekstorming.files.wordpress.com/2015/05/creando.png)

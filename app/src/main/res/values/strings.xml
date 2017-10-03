@@ -22,6 +22,7 @@
     <string name="btn_Convertir">Convertir</string>
     <string name="txtV_Dolares">Dolares</string>
     <string name="txtV_Euros">Euros</string>
+    <string name="txtV_CambioActual">Cambio actual</string>
 
     <!-- Contador de cafés -->
     <string name="txtV_ContadorCafes">Llevas %1$s cafe(s)</string>
@@ -29,8 +30,13 @@
     <string name="btn_menosTiempo">-</string>
 
     <!-- Comunicación entre Activities -->
+    <string name="btn_EnviarMensaje">Saludar</string>
+    <string name="txtV_NombreUsuario">Escribe tu nombre</string>
+
+    <string name="txtV_BienvenidaUsuario">Bienvenid@, %1$s</string>
 
     <!-- Navegacion -->
     <string name="txtV_WebAVisitar">¿Que web deseas visitar?</string>
     <string name="btn_VisitarPagina">Visitar pagina</string>
+    <string name="btn_VisitarPaginaWebView">Visitar pagina con WebView</string>
 </resources>

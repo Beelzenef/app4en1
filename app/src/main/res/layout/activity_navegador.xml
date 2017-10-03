@@ -21,4 +21,16 @@
         android:id="@+id/btn_VisitarWeb"
         android:onClick="manageOnClick"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_VisitarPaginaWebView"
+        android:id="@+id/btn_VisitarWebView"
+        android:onClick="manageOnClick"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wbV_visorWeb"/>
+
 </LinearLayout>

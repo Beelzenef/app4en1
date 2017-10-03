@@ -1,4 +1,4 @@
-package com.example.fechayhora;
+package com.example.fechayhora.EJ_Divisas;
 
 /**
  * Clase Conversor de cambio de divisas (EUR/USD), creada en 28/09/17.
