@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".EJ_Divisas.DivisasActivity"/>
         <activity android:name=".MostrarFechaHoraActivity"/>
-        <activity android:name=".ContadorCafesActivity"/>
+        <activity android:name=".EJ_Cafeses.ContadorCafesActivity"/>
         <activity android:name=".NavegadorActivity"/>
         <activity android:name=".EJ_EnviarMensaje.EnviarMensajeActivity">
         </activity>

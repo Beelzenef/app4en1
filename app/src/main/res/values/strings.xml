@@ -28,6 +28,7 @@
     <string name="txtV_ContadorCafes">Llevas %1$s cafe(s)</string>
     <string name="btn_masTiempo">+</string>
     <string name="btn_menosTiempo">-</string>
+    <string name="btn_TimerEmpieza">Comenzar</string>
 
     <!-- Comunicación entre Activities -->
     <string name="btn_EnviarMensaje">Saludar</string>

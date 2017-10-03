@@ -29,5 +29,11 @@
             android:id="@+id/btn_MenosTiempo"
             android:onClick="manageOnClick"/>
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_menosTiempo"
+        android:id="@+id/btn_TimerComienza"
+        android:onClick="manageOnClick"/>
 
 </LinearLayout>
