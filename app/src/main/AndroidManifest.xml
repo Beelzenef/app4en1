@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".EJ_EnviarMensaje.RecibirMensajeActivity">
         </activity>
+        <activity android:name=".EJ_AdivinarNumero.AdivinarNumeroActivity">
+        </activity>
     </application>
 
 </manifest>

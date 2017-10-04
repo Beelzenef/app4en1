@@ -40,4 +40,12 @@
     <string name="txtV_WebAVisitar">¿Que web deseas visitar?</string>
     <string name="btn_VisitarPagina">Visitar pagina</string>
     <string name="btn_VisitarPaginaWebView">Visitar pagina con WebView</string>
+
+    <!-- Adivinar numero -->
+    <string name="btn_NumeroSuperior">+</string>
+    <string name="btn_NumeroInferior">-</string>
+    <string name="btn_ProbarNumero">Probar nuevo numero</string>
+    <string name="btn_GenerarNuevoNumero">Generar nuevo numero</string>
+    <string name="txtV_AdivinaNumero">¡Adivina un número entre 0 y 20!</string>
+    <string name="txtV_Pistas">¿Cual es tu número?</string>
 </resources>

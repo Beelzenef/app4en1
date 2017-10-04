@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1"
+              tools:context="com.example.fechayhora.EJ_AdivinarNumero.AdivinarNumeroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="@string/txtV_AdivinaNumero"/>
+
+    <TextView
+        android:id="@+id/txtV_Pistas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="@string/txtV_Pistas"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edT_NumeroAProbar"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_NumeroSuperior"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="manageOnClick"
+                android:text="@string/btn_NumeroSuperior"/>
+
+            <Button
+                android:id="@+id/btn_NumeroInferior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="manageOnClick"
+                android:text="-"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_GenerarNuevoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="manageOnClick"
+        android:text="@string/btn_GenerarNuevoNumero"/>
+
+    <Button
+        android:id="@+id/btn_ProbarNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:onClick="manageOnClick"
+        android:text="@string/btn_ProbarNumero"/>
+
+</LinearLayout>
