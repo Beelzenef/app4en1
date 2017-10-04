@@ -1,5 +1,6 @@
 package com.example.fechayhora.EJ_Cafeses;
 
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -10,8 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fechayhora.R;
-
-import org.w3c.dom.Text;
 
 /**
  * Clase para Contador de cafes
@@ -28,6 +27,7 @@ public class ContadorCafesActivity extends AppCompatActivity {
     private TextView txtV_MarcadorTiempo;
 
     CuantosCafes cafeteador;
+    MediaPlayer alertaFinalCafe;
 
     private ContadorTiempo contadorTiempo;
 
@@ -43,9 +43,10 @@ public class ContadorCafesActivity extends AppCompatActivity {
         txtV_LlevasXCafes = (TextView) findViewById(R.id.txtV_ContadorCafes);
         txtV_MarcadorTiempo = (TextView) findViewById(R.id.txtV_MarcadorTiempo);
 
-        // Inicializando cafeteador y contador de tiempo
+        // Inicializando cafeteador, reproductor de sonido y contador de tiempo
         cafeteador = new CuantosCafes();
         actualizarMarcadorMinutos();
+        alertaFinalCafe = MediaPlayer.create(this, R.raw.alert);
     }
 
     public void manageOnClick(View v) {
@@ -111,7 +112,7 @@ public class ContadorCafesActivity extends AppCompatActivity {
     }
 
     void sonidoNotificacion() {
-
+        alertaFinalCafe.start();
     }
 
     void demasiadosCafes() {

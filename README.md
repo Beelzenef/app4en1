@@ -2,21 +2,21 @@
 
 Primer actividad para ACDAT
 
-## Aplicaciones a realizar:
+### Aplicaciones a realizar:
 
 - [x] Fecha y hora :clock1:
 
 Una aplicación sencilla que actualiza un campo de texto en el que visualizar la fecha y la hora, para no perder la noción del tiempo.
 
-- [ ] Contador de cafés :coffee:
+- [x] Contador de cafés :coffee:
 
 Una aplicación que emula un pomodoro :tomato: para tomar café en los descansos. Contabiliza los cafés que has tomado (para cuidar tu salud) en descansos de hasta diez minutos de duración.
 
 Incluye:
 
-- Límite de cafés
-- Sonido de notificación cuando termina el tiempo de café
-- Notificación en texto para el usuario cuando llega a 10 cafés
+1. Límite de cafés
+2. Sonido de notificación cuando termina el tiempo de café
+3. Notificación en texto para el usuario cuando llega a 10 cafés
 
 - [x] Divisas :dollar:
 
