@@ -1,39 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
 
     <TextView
+        android:id="@+id/txtV_ContadorCafes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtV_ContadorCafes"
-        android:id="@+id/txtV_ContadorCafes"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txtV_ContadorCafes"
-        android:id="@+id/txtV_MarcadorTiempo"/>
+        android:textSize="24sp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06">
+
+        <TextView
+            android:id="@+id/txtV_MarcadorTiempo"
+            android:layout_width="304dp"
             android:layout_height="wrap_content"
-            android:text="@string/btn_masTiempo"
-            android:id="@+id/btn_MasTiempo"
-            android:onClick="manageOnClick"/>
+            android:layout_weight="1"
+            android:text="@string/txtV_MarcadorTiempo"
+            android:textSize="30sp"/>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_menosTiempo"
             android:id="@+id/btn_MenosTiempo"
-            android:onClick="manageOnClick"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="manageOnClick"
+            android:text="@string/btn_menosTiempo"/>
+
+        <Button
+            android:id="@+id/btn_MasTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="manageOnClick"
+            android:text="@string/btn_masTiempo"/>
     </LinearLayout>
+
     <Button
+        android:id="@+id/btn_TimerComienza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_menosTiempo"
-        android:id="@+id/btn_TimerComienza"
-        android:onClick="manageOnClick"/>
+        android:layout_gravity="bottom|center_horizontal|center"
+        android:onClick="manageOnClick"
+        android:text="@string/btn_TimerEmpieza"/>
 
 </LinearLayout>

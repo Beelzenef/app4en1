@@ -6,8 +6,9 @@ package com.example.fechayhora.EJ_Cafeses;
 
 public final class CuantosCafes {
 
-    int cafes;
-    int minutos;
+    private int cafes;
+    private int minutos;
+    private int segundos;
 
     public int getCafes() {
         return cafes;
@@ -25,10 +26,15 @@ public final class CuantosCafes {
         this.minutos = minutos;
     }
 
+    public int getSegundos() {return segundos;}
+
+    public void setSegundos(int segundos) { this.segundos = segundos; }
+
     public CuantosCafes()
     {
         cafes = 0;
         minutos = 5;
+        segundos = 0;
     }
 
 

@@ -25,18 +25,18 @@
     <string name="txtV_CambioActual">Cambio actual</string>
 
     <!-- Contador de cafés -->
-    <string name="txtV_ContadorCafes">Llevas %1$s cafe(s)</string>
+    <string name="txtV_ContadorCafes">Llevas 0 cafe(s)</string>
+    <string name="txtV_MarcadorTiempo">0:00</string>
     <string name="btn_masTiempo">+</string>
     <string name="btn_menosTiempo">-</string>
-    <string name="btn_TimerEmpieza">Comenzar</string>
+    <string name="btn_TimerEmpieza">Tomar café</string>
 
-    <!-- Comunicación entre Activities -->
+    <!-- Mensaje entre Activities -->
     <string name="btn_EnviarMensaje">Saludar</string>
     <string name="txtV_NombreUsuario">Escribe tu nombre</string>
-
     <string name="txtV_BienvenidaUsuario">Bienvenid@, %1$s</string>
 
-    <!-- Navegacion -->
+    <!-- Navegacion web -->
     <string name="txtV_WebAVisitar">¿Que web deseas visitar?</string>
     <string name="btn_VisitarPagina">Visitar pagina</string>
     <string name="btn_VisitarPaginaWebView">Visitar pagina con WebView</string>
