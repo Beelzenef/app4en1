@@ -49,9 +49,11 @@ public class AdivinarNumeroActivity extends AppCompatActivity {
         switch (v.getId())
         {
             case R.id.btn_NumeroInferior:
+                checkEditTVacio();
                 disminuirNum(Integer.parseInt(edT_nuevoPrueba.getText().toString()));
                 break;
             case R.id.btn_NumeroSuperior:
+                checkEditTVacio();
                 aumentarNum(Integer.parseInt(edT_nuevoPrueba.getText().toString()));
                 break;
             case R.id.btn_GenerarNuevoNumero:
@@ -59,9 +61,16 @@ public class AdivinarNumeroActivity extends AppCompatActivity {
                 btn_GenerarNumero.setEnabled(false);
                 break;
             case R.id.btn_ProbarNumero:
+                checkEditTVacio();
                 comprobarNumero(Integer.parseInt(edT_nuevoPrueba.getText().toString()));
                 break;
         }
+    }
+
+    private void checkEditTVacio()
+    {
+        if (edT_nuevoPrueba.getText().length() == 0)
+            edT_nuevoPrueba.setText("1");
     }
 
     private void aumentarNum(int num)
